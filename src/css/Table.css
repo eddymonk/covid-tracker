@@ -1,0 +1,26 @@
+.table{
+ margin-top: 20px;
+ /* how to make scrollable list  */
+ overflow: scroll;
+ overflow-x: hidden;
+ height: 50vh;
+ color: #6a5d5d;
+ background-color: white;
+}
+
+.table tr{
+ display: flex;
+ justify-content: space-between;
+}
+
+.table td{
+ padding: 0.5rem;
+}
+
+.table::-webkit-scrollbar {
+ display: none;
+}
+
+.table tr:nth-of-type(odd) {
+ background-color: #f3f2f8;
+}
