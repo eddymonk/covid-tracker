@@ -27,7 +27,7 @@ function App() {
 
   //SET WORLDWIDE AS DEFAULT
   useEffect(() =>{
-    fetch("http://disease.sh/v3/covid-19/all")
+    fetch("https://disease.sh/v3/covid-19/all")
     .then(response=> response.json())
     .then(data => {
       setCountryInfo(data);
@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() =>{
     const getCountriesData = async() => {
-      await fetch("http://disease.sh/v3/covid-19/countries")
+      await fetch("https://disease.sh/v3/covid-19/countries")
       .then((response) => response.json())
       .then((data) => {
         const countries = data.map((country) =>(
